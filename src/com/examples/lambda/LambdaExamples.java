@@ -15,7 +15,7 @@ public class LambdaExamples {
         OperationsLambdaCar oOLC = new OperationsLambdaCar();
         Operations<Car> bmwCars = o -> "BMW".equals(o.getBrand());
         Operations<Car> mercedesCars = o -> o.getBrand().equals("Mercedes");  
-        Operations<Car> subaruCars = o -> o.getBrand().equals("Mercedes");
+        Operations<Car> subaruCars = o -> o.getBrand().equals("Subaru");
         Operations<Car> cheaperPricesCars = o -> o.getPrice()<30000;
         
         System.out.println("\n==== Coches por Marca ====");
